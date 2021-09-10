@@ -1,6 +1,6 @@
 {
   "name": "stac-ts",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "index.js",
   "types": "src/types/index.d.ts",
   "repository": "github:blacha/stac-ts",
