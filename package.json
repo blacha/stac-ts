@@ -2,21 +2,17 @@
   "name": "stac-ts",
   "version": "0.0.1",
   "main": "index.js",
-  "types": "types/index.d.ts",
+  "types": "src/types/index.d.ts",
   "repository": "github:blacha/stac-ts",
   "license": "MIT",
   "scripts": {
-    "test": "tsc",
-    "build-types": "node compile.types.js"
+    "build": "tsc",
+    "lint": "npx eslint {src/**,*.js}"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.6.1",
-    "@typescript-eslint/parser": "^3.6.1",
-    "eslint": "^7.4.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.0.5",
-    "typescript": "^3.9.6",
+    "@linzjs/style": "^3.1.1",
+    "conventional-changelog-cli": "^2.1.1",
+    "conventional-github-releaser": "^3.1.5",
     "json-schema-to-typescript": "^9.1.1"
   }
 }
