@@ -12,7 +12,6 @@
   "devDependencies": {
     "@linzjs/style": "^3.1.1",
     "conventional-changelog-cli": "^2.1.1",
-    "conventional-github-releaser": "^3.1.5",
-    "json-schema-to-typescript": "^9.1.1"
+    "conventional-github-releaser": "^3.1.5"
   }
 }
