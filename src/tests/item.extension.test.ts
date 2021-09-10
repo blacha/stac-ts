@@ -186,8 +186,7 @@ export const ExtensionItem: StacItem = {
   ],
   assets: {
     B1: {
-      href:
-        'https://landsat-pds.s3.amazonaws.com/c1/L8/107/018/LC08_L1TP_107018_20181001_20181001_01_RT/LC08_L1TP_107018_20181001_20181001_01_RT_B1.TIF',
+      href: 'https://landsat-pds.s3.amazonaws.com/c1/L8/107/018/LC08_L1TP_107018_20181001_20181001_01_RT/LC08_L1TP_107018_20181001_20181001_01_RT_B1.TIF',
       type: 'image/tiff; application=geotiff',
       title: 'Band 1 (coastal)',
       'eo:bands': [
@@ -200,8 +199,7 @@ export const ExtensionItem: StacItem = {
       ],
     },
     B8: {
-      href:
-        'https://landsat-pds.s3.amazonaws.com/c1/L8/107/018/LC08_L1TP_107018_20181001_20181001_01_RT/LC08_L1TP_107018_20181001_20181001_01_RT_B8.TIF',
+      href: 'https://landsat-pds.s3.amazonaws.com/c1/L8/107/018/LC08_L1TP_107018_20181001_20181001_01_RT/LC08_L1TP_107018_20181001_20181001_01_RT_B8.TIF',
       type: 'image/tiff; application=geotiff',
       title: 'Band 8 (panchromatic)',
       'eo:bands': [
