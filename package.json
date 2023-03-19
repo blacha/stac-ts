@@ -10,7 +10,7 @@
     "lint": "npx eslint {src/**,*.js}"
   },
   "devDependencies": {
-    "@linzjs/style": "^3.2.0",
+    "@linzjs/style": "^3.15.0",
     "conventional-changelog-cli": "^2.1.1",
     "conventional-github-releaser": "^3.1.5"
   }
