@@ -5,8 +5,8 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - name: Build and test
         uses: linz/action-typescript@v3
         with:
-          node-version: "18.x"
+          node-version: '18.x'

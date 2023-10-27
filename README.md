@@ -2,10 +2,8 @@
 
 Typescript typings for [SpatioTemporal Asset Catalogs](https://stacspec.org/)
 
-
 ```typescript
-
-import type {StacCatalog} from 'stac-ts';
+import type { StacCatalog } from 'stac-ts';
 
 const catalog: StacCatalog = {
   stac_version: '1.0.0',
@@ -17,5 +15,5 @@ const catalog: StacCatalog = {
     { rel: 'child', href: 'https://example.com/naip/30087/catalog.json' },
     { rel: 'root', href: 'https://example.com/catalog.json' },
   ],
-}
+};
 ```
