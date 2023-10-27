@@ -13,6 +13,27 @@ export const CatalogExample: StacCatalog = {
   ],
 };
 
+/** From s3://nz-imagery/catalog.json */
+export const LinzCatalog: StacCatalog = {
+  stac_version: '1.0.0',
+  type: 'Catalog',
+  id: 'nz-imagery',
+  description:
+    "Toitū Te Whenua Land Information New Zealand makes New Zealand's publicly owned aerial and satellite imagery archive freely available to use under an open licence. This public S3 bucket has been made available to enable bulk access and cloud-based data processing. You can also access the imagery through the LINZ Data Service or LINZ Basemaps.",
+  links: [
+    { rel: 'self', href: 'https://nz-imagery.s3.ap-southeast-2.amazonaws.com/catalog.json' },
+    { rel: 'root', href: './catalog.json' },
+    {
+      rel: 'child',
+      href: './auckland/auckland_2010-2011_0.125m/rgb/2193/collection.json',
+      title: 'Auckland 0.125m Urban Aerial Photos (2010-2011)',
+      'file:checksum': '12209d1ba07a902b1b5a8a7049d51195e0e7d97e388fb3e0a6e1f988b198bf1f69cc',
+      'file:size': 387936,
+    },
+  ],
+  stac_extensions: ['https://stac-extensions.github.io/file/v2.1.0/schema.json'],
+};
+
 export const CatalogItemsExample: StacCatalog = {
   stac_version: '1.0.0',
   type: 'Catalog',
