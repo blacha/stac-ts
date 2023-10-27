@@ -7,11 +7,9 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "lint": "npx eslint {src/**,*.js}"
+    "lint": "npx eslint . --ignore-path .gitignore"
   },
   "devDependencies": {
-    "@linzjs/style": "^3.15.0",
-    "conventional-changelog-cli": "^2.1.1",
-    "conventional-github-releaser": "^3.1.5"
+    "@linzjs/style": "^5.0.0"
   }
 }
