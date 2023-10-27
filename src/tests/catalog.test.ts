@@ -1,4 +1,4 @@
-import { StacCatalog } from '../types';
+import type { StacCatalog } from '../types/catalog.js';
 
 /** @see ./stac-spec/catalog-spec/examples/catalog.json */
 export const CatalogExample: StacCatalog = {

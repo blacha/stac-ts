@@ -1,4 +1,4 @@
-import { StacCollection } from '../types';
+import type { StacCollection } from '../types/index.js';
 
 export const LandSatCollection: StacCollection = {
   stac_version: '1.0.0',
