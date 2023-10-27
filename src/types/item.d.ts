@@ -16,6 +16,12 @@ export type StacItem = GeoJSONFeature & {
   stac_version: StacVersion;
   stac_extensions?: StacExtensions;
   id: string;
+  /**
+   * The ID of the STAC Collection this Item references to.
+   *
+   * Only exists if {@link StacItem.links} contain a `{"rel": "collection"}`
+   */
+  collection?: string;
   links: StacLink[];
   assets: { [k: string]: StacAsset };
   properties: CommonMetadata &
