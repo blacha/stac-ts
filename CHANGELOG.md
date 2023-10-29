@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.2](https://github.com/blacha/stac-ts/compare/v1.0.1...v1.0.2) (2023-10-29)
+
+
+### Bug Fixes
+
+* correct npm token for publishing ([51c99d7](https://github.com/blacha/stac-ts/commit/51c99d74645ca4be9806dcc2a767a27823436a1d))
+* import docs from stac-spec repo ([de2f3ba](https://github.com/blacha/stac-ts/commit/de2f3baf0a490230c465a6449717f24c943ec022))
+
 ## [1.0.1](https://github.com/blacha/stac-ts/compare/v1.0.0...v1.0.1) (2023-10-27)
 
 
