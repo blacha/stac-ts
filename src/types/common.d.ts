@@ -2,10 +2,26 @@ export type StacVersion = '1.0.0';
 export type StacExtensions = string[];
 export type StacEntity = 'Collection' | 'Catalog' | 'Item';
 
+/**
+ * This object describes a relationship with another entity. Data providers are advised to be liberal with links.
+ *
+ * https://github.com/radiantearth/stac-spec/blob/master/catalog-spec/catalog-spec.md#link-object
+ */
 export interface StacLink {
+  /** The actual link in the format of an URL. Relative and absolute links are both allowed. */
   href: string;
+  /**
+   *  Relationship between the current document and the linked document.
+   *
+   *  See https://github.com/radiantearth/stac-spec/blob/master/catalog-spec/catalog-spec.md#relation-types for more information.
+   *
+   */
   rel: string;
+  /**
+   * [Media type](https://github.com/radiantearth/stac-spec/blob/master/catalog-spec/catalog-spec.md#media-types) of the referenced entity.
+   */
   type?: string;
+  /** A human readable title to be used in rendered displays of the link. */
   title?: string;
   [k: string]: unknown;
 }

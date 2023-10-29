@@ -11,17 +11,41 @@ import type { GeoJSONFeature } from './geojson.js';
  * This object represents the metadata for an item in a SpatioTemporal Asset Catalog.
  */
 export type StacItem = GeoJSONFeature & {
+  /** The STAC version the Item implements. */
   stac_version: StacVersion;
+  /** A list of extensions the Item implements. */
   stac_extensions?: StacExtensions;
+  /**
+   * Provider identifier. The ID should be unique within the Collection that contains the Item
+   *
+   * https://github.com/radiantearth/stac-spec/blob/master/item-spec/item-spec.md#id
+   */
   id: string;
   /**
    * The ID of the STAC Collection this Item references to.
    *
    * Only exists if {@link StacItem.links} contain a `{"rel": "collection"}`
+   *
+   * https://github.com/radiantearth/stac-spec/blob/master/item-spec/item-spec.md#collections
    */
   collection?: string;
+  /**
+   * List of link objects to resources and related URLs. A link with the rel set to self is strongly recommended.
+   *
+   * https://github.com/radiantearth/stac-spec/blob/master/item-spec/item-spec.md#link-object
+   */
   links: StacLink[];
+  /**
+   * Dictionary of asset objects that can be downloaded, each with a unique key.
+   *
+   * https://github.com/radiantearth/stac-spec/blob/master/item-spec/item-spec.md#assets
+   **/
   assets: { [k: string]: StacAsset };
+  /**
+   * A dictionary of additional metadata for the Item.
+   *
+   * https://github.com/radiantearth/stac-spec/blob/master/item-spec/item-spec.md#properties-object
+   */
   properties: CommonMetadata &
     (
       | {
