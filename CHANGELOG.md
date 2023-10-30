@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/blacha/stac-ts/compare/v1.0.2...v1.0.3) (2023-10-30)
+
+
+### Bug Fixes
+
+* correct import location for catalog ([39b4b4b](https://github.com/blacha/stac-ts/commit/39b4b4bf56286cb4970809261b241bef02358ab3))
+
 ## [1.0.2](https://github.com/blacha/stac-ts/compare/v1.0.1...v1.0.2) (2023-10-29)
 
 
