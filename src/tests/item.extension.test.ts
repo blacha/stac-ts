@@ -1,4 +1,4 @@
-import type { StacItem } from '../types/item.js';
+import type { StacItem } from '../types/index.js';
 
 export const ExtensionItem: StacItem = {
   type: 'Feature',

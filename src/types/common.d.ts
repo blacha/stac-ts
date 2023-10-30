@@ -11,10 +11,9 @@ export interface StacLink {
   /** The actual link in the format of an URL. Relative and absolute links are both allowed. */
   href: string;
   /**
-   *  Relationship between the current document and the linked document.
+   * Relationship between the current document and the linked document.
    *
-   *  See https://github.com/radiantearth/stac-spec/blob/master/catalog-spec/catalog-spec.md#relation-types for more information.
-   *
+   * See https://github.com/radiantearth/stac-spec/blob/master/catalog-spec/catalog-spec.md#relation-types for more information.
    */
   rel: string;
   /**

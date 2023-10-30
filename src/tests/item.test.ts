@@ -1,4 +1,4 @@
-import type { StacItem } from '../types/item.js';
+import type { StacItem } from '../types/index.js';
 
 export const SimpleItem: StacItem = {
   stac_version: '1.0.0',
