@@ -10,6 +10,6 @@
     "lint": "npx eslint . --ignore-path .gitignore"
   },
   "devDependencies": {
-    "@linzjs/style": "^5.0.0"
+    "@linzjs/style": "^5.2.0"
   }
 }
