@@ -9,4 +9,4 @@ jobs:
       - name: Build and test
         uses: linz/action-typescript@v3
         with:
-          node-version: '18.x'
+          node-version: '22.x'
