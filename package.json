@@ -1,6 +1,6 @@
 {
   "name": "stac-ts",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "types": "src/types/index.d.ts",
   "repository": "github:blacha/stac-ts",
   "license": "MIT",
