@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/blacha/stac-ts/compare/v1.0.3...v1.0.4) (2024-10-17)
+
+
+### Bug Fixes
+
+* remove main from package json as "index.js" does not exist ([#62](https://github.com/blacha/stac-ts/issues/62)) ([70f8b3a](https://github.com/blacha/stac-ts/commit/70f8b3aca46536abb1c4e57942def419384b078e)), closes [#61](https://github.com/blacha/stac-ts/issues/61)
+
 ## [1.0.3](https://github.com/blacha/stac-ts/compare/v1.0.2...v1.0.3) (2023-10-30)
 
 
