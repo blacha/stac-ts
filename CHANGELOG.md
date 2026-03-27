@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.5](https://github.com/blacha/stac-ts/compare/v1.0.4...v1.0.5) (2026-03-27)
+
+
+### Bug Fixes
+
+* export and cleanup geojson types ([ea7c60c](https://github.com/blacha/stac-ts/commit/ea7c60c9c984bfab22243062ac2c4f839d636159))
+* missing node-version ([d0d747e](https://github.com/blacha/stac-ts/commit/d0d747eab64bad7f5c92c146afbfedacb347bb7f))
+
 ## [1.0.4](https://github.com/blacha/stac-ts/compare/v1.0.3...v1.0.4) (2024-10-17)
 
 
