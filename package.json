@@ -4,11 +4,12 @@
   "types": "src/types/index.d.ts",
   "repository": "github:blacha/stac-ts",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "lint": "oxlint . --type-aware --fix && oxfmt . --write",
     "check": "oxlint . --type-aware && oxfmt . --check",
-    "test": "node --test \"build/src/**/*.test.js\""
+    "test": "node --test \"src/**/*.test.ts\""
   },
   "devDependencies": {
     "oxfmt": "^0.42.0",
