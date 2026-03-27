@@ -3,6 +3,7 @@
 Typescript typings for [SpatioTemporal Asset Catalogs](https://stacspec.org/)
 
 ## Catalogs
+
 ```typescript
 import type { StacCatalog } from 'stac-ts';
 
@@ -29,8 +30,7 @@ export const LinzCatalog: StacCatalog = {
   stac_version: '1.0.0',
   type: 'Catalog',
   id: 'nz-imagery',
-  description:
-    "Toitū Te Whenua Land Information New Zealand ...",
+  description: 'Toitū Te Whenua Land Information New Zealand ...',
   links: [
     { rel: 'self', href: 'https://nz-imagery.s3.ap-southeast-2.amazonaws.com/catalog.json' },
     { rel: 'root', href: './catalog.json' },
@@ -44,7 +44,6 @@ export const LinzCatalog: StacCatalog = {
   ],
   stac_extensions: ['https://stac-extensions.github.io/file/v2.1.0/schema.json'],
 };
-
 ```
 
 ## Items

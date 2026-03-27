@@ -1,12 +1,21 @@
-name: Build
+name: Build/Test
 
 on: [push]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Build and test
-        uses: linz/action-typescript@v3
+      - uses: actions/checkout@v6
         with:
-          node-version: '22.x'
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .node-version
+
+      - run: npm ci
+      - run: npm run build
+      - run: npm run lint
+      - run: npm run test

@@ -10,36 +10,35 @@ jobs:
     outputs:
       release_created: ${{ steps.release.outputs.release_created }}
     steps:
-      - uses: actions/checkout@v5
-
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '22.x'
-
-      - uses: google-github-actions/release-please-action@v4
+      - uses: googleapis/release-please-action@v4
         id: release
         with:
           release-type: node
-          token: ${{ secrets.GITHUB_TOKEN }}
 
   publish-release:
     permissions:
       contents: read
       id-token: write
 
+    environment:
+      name: prod
+
     needs: release-please
     runs-on: ubuntu-latest
     if: ${{ needs.release-please.outputs.release_created }}
     steps:
-      - uses: linz/action-typescript@v3
+      - uses: actions/checkout@v6
         with:
-          node-version: '22.x'
+          fetch-depth: 0
 
-      - name: Ensure latest NPM
-        run: npm install -g npm@latest
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .node-version
+
+      - run: npm ci
+      - run: npm run build
+      - run: npm run lint
+      - run: npm run test
 
       - name: Publish to NPM
-        run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm publish
