@@ -4,7 +4,7 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type { StacAsset, StacExtensions, StacLink, StacRoles, StacVersion } from './common';
+import type { StacAsset, StacExtensions, StacLink, StacRoles, StacVersion } from './common.js';
 
 /**
  * This object represents Collections in a SpatioTemporal Asset Catalog.
