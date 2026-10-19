@@ -13,3 +13,10 @@ updates:
       prefix-development: 'build'
       include: 'scope'
     open-pull-requests-limit: 10
+    groups:
+      dev-tooling:
+        patterns:
+          - 'oxlint'
+          - 'oxlint-*'
+          - 'oxfmt'
+          - 'typescript'
