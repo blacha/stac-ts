@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.6](https://github.com/blacha/stac-ts/compare/v1.0.5...v1.0.6) (2026-10-19)
+
+
+### Bug Fixes
+
+* add file extension to imports in collection.d.ts ([#110](https://github.com/blacha/stac-ts/issues/110)) ([2e9deb2](https://github.com/blacha/stac-ts/commit/2e9deb28a2373beabe819dc21126e3973898f9f2))
+* add missing ItemCollection and CollectionCollection ([fb608aa](https://github.com/blacha/stac-ts/commit/fb608aa4d90ef604fc27cd1b40fa1620abb69c03))
+
 ## [1.0.5](https://github.com/blacha/stac-ts/compare/v1.0.4...v1.0.5) (2026-03-27)
 
 
